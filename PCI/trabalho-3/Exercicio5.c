@@ -12,7 +12,6 @@ int main()
     bool continuar = true;
     int k = 0, totalOnibus = 0;
     int cidadeAtual, cidadeAnterior;
-
     // essa matriz aqui eu gerei com I.A, deus me livre escrever tudo isso na mão.
     int distancias[30][30] = {
     {  0, 15, 10, 18, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 90, 85, 80, 75, 70, 65, 60, 55, 50, 45},
@@ -86,5 +85,6 @@ int main()
         printf("número do %d° ônibus: %d \n",k+1, infoOnibus[k].numeroOnibus);
         printf("distância total percorrida: %d \n",infoOnibus[k].distanciaTotal);
         printf("\n");
-    }
+    };
+    free(infoOnibus);
 };
